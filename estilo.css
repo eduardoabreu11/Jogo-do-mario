@@ -1,0 +1,179 @@
+@font-face{
+    font-family: "super mario";
+    src: url(./fontes/SuperMarioWorld.ttf);
+}
+@keyframes animarInimigo {
+    from {
+        right: -100px;
+    }
+    to{
+        right: 105%;
+    }
+}
+
+@keyframes puloPersonagem {
+    0%{
+        bottom: 93px;
+    }
+    
+    50%{
+        bottom: 389px;
+    }
+    
+    60%{
+        bottom: 389px;
+    }
+    70%{
+        bottom: 389px;
+    }
+    80%{
+        bottom: 389px;
+    }
+    90%{
+        bottom: 389px;
+    }
+    100%{
+        bottom: 93px;
+    }
+   
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "super mario";
+    font-size: 24px;
+
+}
+
+#cenario{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./imagens/cenario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#ceu{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./imagens/cenarioceu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+       
+    
+}
+.puloPersonagem{
+    animation: puloPersonagem 500ms ease-out;
+}
+
+.animarInimigo{
+    animation: animarInimigo 18s infinite linear;
+}
+
+#personagem{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(./imagens/marioParadoLadoDireito.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    bottom: 93px;
+    left: 0;
+    
+    
+    
+}
+
+#inimigo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(./imagens/inimigoLadoEsquerdo.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    bottom: 93px;
+    right: -100px;
+    
+}
+
+#menu-jogo{
+    position: absolute;
+    width: 1000px;
+    height: 150px;
+    background-image: url(./imagens/menuDoJogo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    top: 20px;
+    
+}
+
+#tempo{
+    position: absolute;
+    top: 94px;
+    right: 780px;
+    color: #ffdf73;
+}
+
+#vidas{
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    color: white;
+}
+
+#moedas{
+    position: absolute;
+    top: 69px;
+    right: 520px;
+    color: white;
+}
+
+#pontos{
+    position: absolute;
+    top: 100px;
+    right: 520px;
+    color: white;
+}
+
+#bloco{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(./imagens/bloco.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    right: 400px;
+    top: 450px;
+    
+}
+
+#reiniciar{
+    padding:  8px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#iniciar{
+    padding:  8px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+}
+
